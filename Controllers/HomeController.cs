@@ -8,7 +8,8 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        return View();
+        var filmler = Repository.Films;
+        return View(filmler);
     }
 
     

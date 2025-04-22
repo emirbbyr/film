@@ -1,8 +1,36 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@model List<Filmss>
+@{
+    ViewData["Title"] = "Movie Catalog";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <div class="container">
+        <!-- Arama Kutusu -->
+        <form method="get" class="row mb-4">
+            <div class="col-md-10">
+                <input type="text" class="form-control" name="search" placeholder="Search movies...">
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary w-100">Search</button>
+            </div>
+        </form>
+
+        <!-- Film Kartları -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Kart 1 -->
+             @foreach(var anasayfafilmleri in Model)
+             {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="@anasayfafilmleri.Image" class="card-img-top img-fluid" style="height: 300px; object-fit: contain;" alt="Movie Poster">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">@anasayfafilmleri.Title</h5>
+                        <a href="#" class="btn btn-outline-primary mt-2">Details</a>
+                    </div>
+                </div>
+            </div>
+        }
+        </div>
+    </div>
+
+
+

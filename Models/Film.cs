@@ -1,7 +1,7 @@
 
-namespace Films.Models
+namespace film.Models
 {
-    public class Films
+    public class Filmss
     {
         public int Id { get; set; }
         public string Title { get; set; }

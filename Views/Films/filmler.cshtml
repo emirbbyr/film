@@ -1,0 +1,41 @@
+@model List<Filmss>
+    @{
+        ViewData["Title"] = "Tüm filmler";
+    }
+    
+    <div class="container">
+        <!-- Arama Kutusu -->
+        <form method="get" class="row mb-4">
+            <div class="col-md-10">
+                <input type="text" class="form-control" name="search" placeholder="Search movies...">
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary w-100">Search</button>
+            </div>
+        </form>
+    
+        <!-- Film Kartları -->
+        <div class="row g-4">
+            @foreach (var filmler in Model)
+            {
+                <div class="col-12">
+                    <div class="card shadow-sm p-3 text-center">
+                        <!-- Görsel -->
+                        <img src="@filmler.Image"
+                             class="img-fluid mx-auto"
+                             style="width: 200px; height: 300px; object-fit: contain; background-color: #000;" 
+                             alt="Movie Poster">
+    
+                        <!-- Başlık -->
+                        <h5 class="mt-3">@filmler.Title</h5>
+    
+                        <!-- Açıklama alanı -->
+                        <p class="text-muted">Buraya filmin açıklaması gelecek. El ile yazabilirsiniz.</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    
+    

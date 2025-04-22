@@ -8,24 +8,32 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\krale\\.nuget\\packages\\": {}
+    "C:\\Users\\emirhan.bayir\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\krale\\OneDrive\\Masaüstü\\emir\\AspNetCOre\\film\\film.csproj",
+      "projectUniqueName": "C:\\Users\\emirhan.bayir\\Desktop\\ASP-NetCore Dersleri\\film\\film.csproj",
       "projectName": "film",
-      "projectPath": "C:\\Users\\krale\\OneDrive\\Masaüstü\\emir\\AspNetCOre\\film\\film.csproj",
-      "packagesPath": "C:\\Users\\krale\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\krale\\OneDrive\\Masaüstü\\emir\\AspNetCOre\\film\\obj\\",
+      "projectPath": "C:\\Users\\emirhan.bayir\\Desktop\\ASP-NetCore Dersleri\\film\\film.csproj",
+      "packagesPath": "C:\\Users\\emirhan.bayir\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\emirhan.bayir\\Desktop\\ASP-NetCore Dersleri\\film\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\krale\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\emirhan.bayir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
