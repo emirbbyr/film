@@ -1,7 +1,7 @@
 @model List<Filmss>
-@{
+    @{
     ViewData["Title"] = "Movie Catalog";
-}
+    }
 
     <div class="container">
         <!-- Arama Kutusu -->
@@ -17,20 +17,20 @@
         <!-- Film Kartları -->
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Kart 1 -->
-             @foreach(var anasayfafilmleri in Model)
-             {
+            @foreach(var anasayfafilmleri in Model)
+            {if (anasayfafilmleri.isActive && anasayfafilmleri.isHome)
+            {
             <div class="col">
                 <div class="card h-100 shadow-sm">
-                    <img src="@anasayfafilmleri.Image" class="card-img-top img-fluid" style="height: 300px; object-fit: contain;" alt="Movie Poster">
+                    <img src="@anasayfafilmleri.Image" class="card-img-top img-fluid"
+                        style="height: 300px; object-fit: contain;" alt="Movie Poster">
                     <div class="card-body text-center">
                         <h5 class="card-title">@anasayfafilmleri.Title</h5>
-                        <a href="#" class="btn btn-outline-primary mt-2">Details</a>
+                        <a class="btn btn-primary" asp-controller="films" asp-action="details" asp-route-id="@anasayfafilmleri.Id"  >Film Detayı</a>
                     </div>
                 </div>
             </div>
-        }
+            }
+            }
         </div>
     </div>
-
-
-

@@ -12,5 +12,9 @@ public class FilmsController : Controller
         return View(filmler);            // ✅ View'a gönder
     }
 
-
+    public IActionResult details(int id)
+{
+    var filmler =Repository.GetById(id);
+return View(filmler);
+}
 }

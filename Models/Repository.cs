@@ -9,12 +9,12 @@ namespace film.Models
         {
             _filmler = new List<Filmss>()
             {
-                new Filmss (){Id=1, Title="Siccin 2", Details="Korku dolu ve gerilim dolu bir film", Image="/img/siccin2.jpg", isActive=true, isHome=true},
-                new Filmss (){Id=2, Title="Hılı Ve Öfkeli 2", Details="Aksiyon dolu bir film", Image="/img/hizliveöfkeli.jpg", isActive=true, isHome=true},
-                new Filmss (){Id=3, Title="Recep ivedik 2", Details="komedinin dibine vuracaksınız", Image="/img/recepivedik2.jpg", isActive=true, isHome=true},
-                new Filmss (){Id=4, Title="James Bond ", Details="Harika bir süper ajan filmi, aksiyon dolu", Image="/img/jamesbond.jpg", isActive=true, isHome=true},
-                new Filmss (){Id=5, Title="Dabbe2", Details="Korku dolu ve gerilim dolu bir film, çok fena olacaksınız", Image="/img/dabbe2.jpg", isActive=true, isHome=true},
-                new Filmss (){Id=6, Title="Kolpaçino", Details="Mükemmel bir komedi filmi", Image="/img/kolpaçino.jpg", isActive=true, isHome=true},
+                new Filmss (){Id=1, Title="Siccin 2", Details="Korku dolu ve gerilim dolu bir film", Image="/img/siccin2.jpg", Tags= new string[]{"Korku","Gerilim"}, isActive=true, isHome=true},
+                new Filmss (){Id=2, Title="Hılı Ve Öfkeli 2", Details="Aksiyon dolu bir film", Image="/img/hizliveöfkeli.jpg",  Tags= new string[]{"Aksiyon","Cinsellik"},isActive=true, isHome=true},
+                new Filmss (){Id=3, Title="Recep ivedik 2", Details="komedinin dibine vuracaksınız", Image="/img/recepivedik2.jpg",  isActive=true, isHome=true},
+                new Filmss (){Id=4, Title="James Bond ", Details="Harika bir süper ajan filmi, aksiyon dolu", Image="/img/jamesbond.jpg",  isActive=true, isHome=false},
+                new Filmss (){Id=5, Title="Dabbe2", Details="Korku dolu ve gerilim dolu bir film, çok fena olacaksınız", Image="/img/dabbe2.jpg",  Tags= new string[]{"Korku","Gerilim","Argo"},isActive=false, isHome=false},
+                new Filmss (){Id=6, Title="Kolpaçino", Details="Mükemmel bir komedi filmi", Image="/img/kolpaçino.jpg", Tags= new string[]{"Komedi","Cinsellik"}, isActive=true, isHome=true},
             };
         }
 

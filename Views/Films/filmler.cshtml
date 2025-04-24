@@ -18,21 +18,7 @@
         <div class="row g-4">
             @foreach (var filmler in Model)
             {
-                <div class="col-12">
-                    <div class="card shadow-sm p-3 text-center">
-                        <!-- Görsel -->
-                        <img src="@filmler.Image"
-                             class="img-fluid mx-auto"
-                             style="width: 200px; height: 300px; object-fit: contain; background-color: #000;" 
-                             alt="Movie Poster">
-    
-                        <!-- Başlık -->
-                        <h5 class="mt-3">@filmler.Title</h5>
-    
-                        <!-- Açıklama alanı -->
-                        <p class="text-muted">Buraya filmin açıklaması gelecek. El ile yazabilirsiniz.</p>
-                    </div>
-                </div>
+                @await Html.PartialAsync("_filmler", filmler)
             }
         </div>
     </div>

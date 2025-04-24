@@ -10,5 +10,6 @@ namespace film.Models
         public string Image { get; set; }
         public bool  isActive { get; set; }
         public bool  isHome { get; set; }
+        public string[] Tags {get; set;}
     }
 }
